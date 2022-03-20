@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Custom fund index</title>
+</head>
+
+<body>
+  <h2>Custom fund index chart</h2>
+
+  <div>
+    <label for="one"> <input type="radio" id="one" name="interval" value="1" /> 1 minute </label>
+    <label for="five"> <input type="radio" id="five" name="interval" value="5" checked /> 5 minutes </label>
+    <label for="fifteen"> <input type="radio" id="fifteen" name="interval" value="15" /> 15 minutes </label>
+  </div>
+
+  <div id="custom_chart"></div>
+</body>
+
+<!-- TradingView Chart -->
+<script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
+
+<script src="index.js"></script>
+
+</html>
