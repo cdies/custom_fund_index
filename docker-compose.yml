@@ -11,13 +11,13 @@ services:
             - "8000:8000"
         command: gunicorn -b 0.0.0.0:8000 -k uvicorn.workers.UvicornWorker tinkoff-microservice:api
 
-    # nginx:
-    #     image: nginx
-    #     container_name: nginx-html
-    #     restart: unless-stopped
-    #     volumes:
-    #         - ./html:/usr/share/nginx/html:ro
-    #     depends_on:
-    #         - microservice
-    #     ports:
-    #         - "8080:80"
+    nginx:
+        image: nginx
+        container_name: nginx-html
+        restart: unless-stopped
+        volumes:
+            - ./html:/usr/share/nginx/html:ro
+        depends_on:
+            - microservice
+        ports:
+            - "8080:80"
