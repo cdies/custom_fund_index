@@ -3,6 +3,7 @@ import numpy as np
 from datetime import datetime, timedelta
 import logging
 import sys
+from decimal import Decimal
 
 from tinkoff.invest import Client, CandleInterval
 
@@ -55,8 +56,9 @@ class CustomIndex:
 
 
     def __units_nano_convert(self, d):
-        price = '{}.{}'.format(d['units'], d['nano'])
-        price = float(price)
+        # https://github.com/Tinkoff/invest-python/issues/45
+        nano = d['nano'] / Decimal("10e8")
+        price = d['units'] + float(nano)
         
         return price
 
