@@ -7,3 +7,7 @@ https://habr.com/ru/post/656547/
 - Выполнить в корневой папке проекта `docker-compose up --build` и открыть в браузере `http://localhost:8080/`.
 
 ![](https://habrastorage.org/webt/ge/7c/v0/ge7cv0oacqia4-fmirof2qbymbs.png)
+
+<br/><br/>
+---
+[![](https://habrastorage.org/webt/gz/gc/i6/gzgci6pivvdnk-gmj-kepml5q9y.gif)](https://yoomoney.ru/to/4100117863420642)
